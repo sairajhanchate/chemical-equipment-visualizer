@@ -14,6 +14,7 @@ The project is already initialized as a Git repository.
     Run the following commands in your terminal (replace `YOUR_USERNAME` with your GitHub username):
 
     ```bash
+    cd chemical-equipment-visualizer
     git remote add origin https://github.com/YOUR_USERNAME/chemical-equipment-visualizer.git
     git branch -M main
     git push -u origin main
@@ -38,7 +39,7 @@ The easiest way to deploy this Django + React app is using **Render** or **Herok
     *   **Branch**: `main`
     *   **Runtime**: `Python 3`
     *   **Build Command**: `pip install -r requirements.txt && python backend/manage.py collectstatic --noinput && python backend/manage.py migrate`
-    *   **Start Command**: `gunicorn backend.backend.wsgi:application`
+    *   **Start Command**: `cd backend && gunicorn backend.wsgi:application`
 5.  **Environment Variables**:
     Add the following environment variables in the "Environment" tab:
     *   `PYTHON_VERSION`: `3.10.12` (or similar stable version)
@@ -56,7 +57,10 @@ Since this is a hybrid app, the Django backend can serve the frontend if you bui
 3.  Select `frontend` as the **Root Directory**.
 4.  Build Command: `npm run build`
 5.  Output Directory: `build`
-6.  **IMPORTANT**: You will need to update the `API_BASE_URL` in your frontend code (`frontend/src/services/api.js`) to point to your new Render Backend URL (e.g., `https://equipment-visualizer.onrender.com/api`).
+6.  **IMPORTANT SETTINGS**:
+    *   **Root Directory**: Click "Edit" next to Root Directory and select the `frontend` folder.
+    *   **Output Directory**: `build` (default for React)
+    *   **Environment Variables**: Update `REACT_APP_API_BASE_URL` if you used environments, or update `src/services/api.js` directly.
 
 ## 3. Desktop App Distribution
 To let others use the desktop app:
