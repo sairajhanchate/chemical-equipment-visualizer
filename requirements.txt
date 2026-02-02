@@ -1,0 +1,21 @@
+# Backend Dependencies
+Django==4.2.7
+djangorestframework==3.14.0
+django-cors-headers==4.3.0
+pandas
+reportlab==4.0.7
+
+# Desktop Application Dependencies
+PyQt5==5.15.10
+matplotlib
+requests
+
+# Additional utilities
+Pillow
+numpy
+
+# Production
+gunicorn
+whitenoise
+psycopg2-binary
+

@@ -1,0 +1,21 @@
+Equipment Name,Type,Flowrate,Pressure,Temperature
+PUMP-001,Centrifugal Pump,150.5,5.2,45.8
+REACTOR-001,CSTR,200.0,8.5,120.5
+HEAT-EX-001,Shell and Tube,180.3,6.8,85.2
+PUMP-002,Centrifugal Pump,120.0,4.5,40.0
+DISTILL-001,Distillation Column,250.5,12.0,180.0
+REACTOR-002,PFR,175.2,9.2,135.5
+COMP-001,Reciprocating Compressor,95.0,15.5,65.0
+HEAT-EX-002,Plate Heat Exchanger,160.0,5.5,75.0
+PUMP-003,Positive Displacement,130.5,7.2,50.5
+REACTOR-003,Batch Reactor,190.0,6.5,110.0
+HEAT-EX-003,Shell and Tube,175.0,7.0,90.5
+COMP-002,Centrifugal Compressor,110.0,18.0,70.5
+DISTILL-002,Distillation Column,230.0,11.5,175.0
+PUMP-004,Centrifugal Pump,140.0,5.8,42.5
+REACTOR-004,CSTR,210.5,8.0,125.0
+HEAT-EX-004,Air Cooled,155.0,4.8,80.0
+COMP-003,Rotary Screw,100.5,16.0,68.0
+PUMP-005,Centrifugal Pump,125.0,5.0,38.0
+DISTILL-003,Packed Column,240.0,10.5,170.0
+REACTOR-005,PFR,185.0,9.8,140.0
